@@ -235,48 +235,268 @@ p {
 }
 
 /* Experience Section */
-#experience{
-    background-color: #e1e4e7;
-}
-#experience1{
-    padding-top: 70px; /* Adjust based on your header height */
-    margin-top: -70px; /* Adjust based on your header height */
-}
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-}
 
-.timeline-item {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 600px;
-    position: relative; /* Ensures the "In Progress" sign is positioned relative to the timeline item */
-    padding: 20px;
-    border-left: 2px solid #ddd;
+.experience {
+    padding: 20px 0; /* Reduced padding */
+    background-color: #e9ecef;
+  }
+  
+  .experience .heading {
+    font-size: 2rem; /* Reduced font size */
+    text-align: center;
     margin-bottom: 20px;
-}
+  }
+  
+  .experience .timeline {
+    position: relative;
+    max-width: 1000px; /* Reduced max-width */
+    margin: 0 auto;
+    margin-right: 400px;
+  }
 
-.timeline-item h5 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.timeline-item p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #666;
-}
-
-.timeline-item .btn {
-    margin-top: 0.5rem;
-}
+  .experience .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px; /* Reduced width of the timeline line */
+    background: #020133;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: -1;
+  }
+  
+  .experience .container {
+    padding: 10px 20px; /* Reduced padding */
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* Circles on timeline */
+  .experience .container::after {    
+    content: "\f0b1";
+    position: absolute;
+    width: 20px; /* Reduced size of circles */
+    height: 20px;
+    right: -12px;
+    background-color: #fff;
+    border: 3px solid #FF9F55; /* Adjusted border */
+    top: 15px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 1.5rem; /* Adjusted font size */
+    text-align: center;
+    font-weight: 600;
+    color: #02094b;
+    font-family: 'Font Awesome\ 5 Free';
+  }
+  
+  .experience .left {
+    left: 0;
+  }
+  
+  .experience .right {
+    left: 50%;
+  }
+  
+  /* Arrows pointing right */
+  .experience .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 20px; /* Adjusted position */
+    border: medium solid #f68c09;
+    border-width: 8px 0 8px 8px; /* Reduced arrow size */
+    border-color: transparent transparent transparent #110f0c;
+  }
+  
+  /* Arrows pointing left */
+  .experience .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 20px; /* Adjusted position */
+    border: medium solid #f68c09;
+    border-width: 8px 8px 8px 0; /* Reduced arrow size */
+    border-color: transparent #110f0c transparent transparent;
+  }
+  
+  .experience .right::after {
+    left: -12px; /* Adjusted position */
+  }
+  
+  .experience .content {
+    background-color: #f68c09;
+    position: relative;
+    border-radius: 6px;
+    /* padding: 10px; Reduced padding */
+  }
+  
+  .experience .content .tag {
+    font-size: 1.2rem; /* Slightly reduced font size */
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  .experience .content .desc {
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .experience .content .desc h3 {
+    font-size: 1.3rem; /* Slightly reduced font size */
+    font-weight: 600;
+  }
+  
+  .experience .content .desc p {
+    font-size: 1rem; /* Slightly reduced font size */
+  }
+  
+  /* View all button */
+  .morebtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjusted margin */
+  }
+  
+  .morebtn .btn {
+    line-height: 1;
+    padding: 1.2rem 2.5rem; /* Adjusted padding */
+    border-radius: .5em;
+    background: #2506ad;
+    color: #fff;
+    font-size: 1.3rem; /* Adjusted font size */
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .morebtn .btn i {
+    margin-left: 0.3rem;
+    font-size: 1.2rem; /* Adjusted icon size */
+    transition: 0.3s;
+  }
+  
+  .morebtn .btn:hover {
+    background: #1a047e;
+  }
+  
+  .morebtn .btn:hover i {
+    transform: translateX(5px);
+  }
+  
+ /* Media queries - Responsive timeline on screens less than 768px wide */
+@media screen and (max-width: 768px) {
+    .experience .timeline::after {
+      left: 30px; /* Move the timeline line to the left */
+    }
+  
+    .experience .container {
+      width: 100%; /* Full width for containers */
+      padding-left: 45px; /* Adjusted padding */
+      padding-right: 20px; /* Adjusted padding */
+      margin-bottom: 20px; /* Add spacing between containers */
+    }
+  
+    .experience .container::before {
+      left: 60px; /* Adjust arrow position */
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #f68c09 transparent transparent;
+    }
+  
+    .experience .container::after {
+      left: 12px; /* Adjust circle position */
+    }
+  
+    .experience .left,
+    .experience .right {
+      left: 0; /* Align all containers to the left */
+    }
+  
+    .experience .content {
+      padding: 15px; /* Adjust padding within content */
+      border-radius: 6px;
+      width: 350px;
+    }
+  
+    .experience .content .tag {
+      font-size: 1.2rem; /* Adjust font size */
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+    }
+    .experience .content .desc {
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      
+    .experience .content .desc h3 {
+      font-size: 1.2rem; /* Adjust font size */
+      font-weight: 600;
+    }
+  
+    .experience .content .desc p {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .morebtn {
+      margin-top: 15px; /* Adjust margin */
+    }
+  
+    .morebtn .btn {
+      padding: 1rem 2rem; /* Adjust padding */
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .morebtn .btn i {
+      font-size: 1rem; /* Adjust icon size */
+    }
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 480px wide */
+  @media screen and (max-width: 480px) {
+    .experience .timeline::after {
+      left: 20px; /* Move the timeline line further to the left */
+    }
+  
+    .experience .container {
+      padding-left: 35px; /* Adjust padding for smaller screens */
+      width: 350px; /*yellow portion width increase*/
+    }
+  
+    .experience .container::before {
+      left: 40px; /* Adjust arrow position */
+      border-width: 8px 8px 8px 0; /* Adjust arrow size */
+    }
+  
+    .experience .container::after {
+      left: 10px; /* Adjust circle position */
+      width: 18px; /* Reduce circle size */
+      height: 18px;
+    }
+  
+    .experience .content .tag {
+        font-size: 1.2rem; /* Slightly reduced font size */
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+    }
+  
+    .experience .content .desc h3 {
+      font-size: 1rem; /* Adjust font size */
+      font-weight: 600;
+    }
+  
+    .experience .content .desc p {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+  }
 
 /* Style for the "In Progress" sign */
 .ongoing-sign {
