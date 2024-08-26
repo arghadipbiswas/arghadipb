@@ -17,7 +17,7 @@ p {
 
 .navbar {
     background-color: #f8f9fa;
-    
+    opacity: 1;
 }
 
 .navbar .nav-link {
@@ -141,6 +141,48 @@ p {
     padding: 5px;
 }
 
+/* Education Section Styles */
+.education {
+    background: #e5ecfb;
+    min-height: 80vh;
+}
+
+.education .qoute {
+    font-size: 1.0rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.education .box {
+    border-radius: .5rem;
+    box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, .2);
+    background: #fcfcfc;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.education .box:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem .5rem 1.2rem rgba(0, 0, 0, .3);
+}
+
+.education .content h3 {
+    font-size: 2rem;
+    color: #012970;
+    font-weight: 600;
+}
+
+.education .content p {
+    font-size: 1.2rem;
+}
+
+.education h4 {
+    font-size: 1.5rem;
+    color: #226d00;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
 /* Skills Section */
 .skills-section {
     background-color: #e9ecef;
@@ -167,6 +209,31 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+        /* in progress */
+.project-item {
+    position: relative; /* Ensure the parent element is positioned relative */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the "In Progress" sign */
+.in-progress-sign {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Position to the right side */
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* Experience Section */
 #experience{
     background-color: #e1e4e7;
@@ -190,6 +257,10 @@ p {
     margin-bottom: 1rem;
     width: 100%;
     max-width: 600px;
+    position: relative; /* Ensures the "In Progress" sign is positioned relative to the timeline item */
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    margin-bottom: 20px;
 }
 
 .timeline-item h5 {
@@ -199,10 +270,41 @@ p {
 
 .timeline-item p {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
 }
 
 .timeline-item .btn {
     margin-top: 0.5rem;
+}
+
+/* Style for the "In Progress" sign */
+.ongoing-sign {
+    position: absolute;
+    top: 0; /* Align with the top of the timeline item */
+    right: 10px; /* Position on the right side */
+    background-color: #db0202;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style for the "completed" sign */
+.complted-sign{
+    position: absolute;
+    top: 0; /* Align with the top of the timeline item */
+    right: 10px; /* Position on the right side */
+    background-color: #0dd172;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Publications Section */
@@ -322,7 +424,7 @@ p {
     background-color: #007bff;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .contact-section .btn:hover {
@@ -333,6 +435,13 @@ p {
     background-color: #007bff;
     border: none;
 }
+#reset{
+    cursor: pointer;
+    border-radius: 14px;
+    width: 88px;
+    height: 27px;
+}
+
 #successMessage {
     margin-top: 10px;
 }
@@ -342,6 +451,14 @@ footer {
     background-color: #e9ecef;
     padding: 20px 0;
 }
+footer.dark-mode {
+    background-color: #121212;
+}
+
+footer.dark-mode p {
+    color: #e0e0e0;
+}
+
 
 /* Dark Mode */
 body.dark-mode {
@@ -396,14 +513,6 @@ body.dark-mode {
 .form-group {
     max-width: 600px;
     margin: 0 auto;
-}
-
-footer.dark-mode {
-    background-color: #121212;
-}
-
-footer.dark-mode p {
-    color: #e0e0e0;
 }
 
 /* scrolling */
