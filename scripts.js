@@ -13,7 +13,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
       successMessage.style.display = "none";
   }, 2000);
 
-  // Optionally, you can reset the form after submission
+  // Optionally, reset the form after submission
   this.reset();
 });
 
@@ -21,12 +21,12 @@ console.log('JavaScript is working!');
 
 // Carousel Initialization
 document.addEventListener('DOMContentLoaded', function() {
-  var myCarousel = document.querySelector('#carouselExampleCaptions');
+  const myCarousel = document.querySelector('#carouselExampleCaptions');
   if (myCarousel) {
-      var carousel = new bootstrap.Carousel(myCarousel, {
-          interval: 2000,  // 2 seconds
-          ride: 'carousel'
-      });
+    new bootstrap.Carousel(myCarousel, {
+      interval: 2000, // 2 seconds
+      ride: 'carousel'
+    });
   }
 });
 
@@ -36,28 +36,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollLeftBtn = document.getElementById('scroll-left');
   const scrollRightBtn = document.getElementById('scroll-right');
 
-  // Function to scroll container by a specified amount
+  // Function to scroll the container by a specified amount
   function scrollContainer(amount) {
     blogContainer.scrollBy({
-        left: amount,
-        behavior: 'smooth'
+      left: amount,
+      behavior: 'smooth'
     });
-}
+  }
 
-scrollLeftBtn.addEventListener('click', function() {
+  scrollLeftBtn.addEventListener('click', function() {
     scrollContainer(-300); // Scrolls left by 300px
-});
+  });
 
-scrollRightBtn.addEventListener('click', function() {
+  scrollRightBtn.addEventListener('click', function() {
     scrollContainer(300); // Scrolls right by 300px
+  });
 });
 
-});
-
-
-/**
- * Preloader
- */
+// Preloader
 document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader');
   const content = document.getElementById('content');
@@ -76,31 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/**
- * Back to Top Button
- */
-const backToTopBtn = document.querySelector('.back-to-top');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    backToTopBtn.style.display = 'flex';
-  } else {
-    backToTopBtn.style.display = 'none';
-  }
-});
 
-backToTopBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-});
-
+// Navbar Scroll Behavior
 document.addEventListener('scroll', function() {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 50) { // Adjust scroll position threshold as needed
-      navbar.classList.add('scrolled');
+    navbar.classList.add('scrolled');
   } else {
-      navbar.classList.remove('scrolled');
+    navbar.classList.remove('scrolled');
   }
 });

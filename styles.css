@@ -81,26 +81,6 @@ p {
     }
 }
 
-/* Back to Top Button */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    display: none;
-    background: #37517e;
-    color: #fff;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-}
-
-.back-to-top i {
-    font-size: 24px;
-}
-
-
-
 /* Home Section */
 .home-section {
     background-color: #e9ecef;
@@ -423,7 +403,7 @@ p {
     .experience .content {
       padding: 15px; /* Adjust padding within content */
       border-radius: 6px;
-      width: 350px;
+      width: 330px;
     }
   
     .experience .content .tag {
@@ -467,7 +447,7 @@ p {
   
     .experience .container {
       padding-left: 35px; /* Adjust padding for smaller screens */
-      width: 350px; /*yellow portion width increase*/
+      width: 330px; /*yellow portion width increase*/
     }
   
     .experience .container::before {
@@ -556,6 +536,21 @@ p {
 
 
 /* Blogs Section */
+/* video
+#myVideo {
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -10;
+} */
+
+
 .blogs-section {
     background-color: #e9ecef;
     padding-top: 100px;
