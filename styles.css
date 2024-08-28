@@ -403,7 +403,7 @@ p {
     .experience .content {
       padding: 15px; /* Adjust padding within content */
       border-radius: 6px;
-      width: 330px;
+      width: 310px;
     }
   
     .experience .content .tag {
@@ -447,7 +447,7 @@ p {
   
     .experience .container {
       padding-left: 35px; /* Adjust padding for smaller screens */
-      width: 330px; /*yellow portion width increase*/
+      width: 310px; /*yellow portion width increase*/
     }
   
     .experience .container::before {
