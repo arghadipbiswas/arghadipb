@@ -534,8 +534,13 @@ p {
     margin-bottom: 1rem;
 }
 
+.publication-item:hover{
+  transform: translateY(-10px);
+}
+
 
 /* Blogs Section */
+
 /* video
 #myVideo {
   position: fixed;
@@ -555,6 +560,10 @@ p {
     background-color: #e9ecef;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.card:hover{
+  transform: translateY(-5px);
 }
 
 .blogs-section .card {
