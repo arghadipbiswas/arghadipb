@@ -84,38 +84,37 @@
     <!-- About Section -->
     <section class="about-section pt-5" id="about">
         <div class="container text-center pt-2">
-            <div class="row align-items-center">
-                <div class="col-lg-5 about-portrait animate__animated animate__fadeInLeft">
+          <div class="row align-items-center">
+            <!-- Flip Container for Photo -->
+            <div class="col-lg-5 col-md-12 mb-4 about-portrait animate__animated animate__fadeInLeft">
+              <div class="flip-container">
+                <div class="flipper">
+                  <!-- Front Side -->
+                  <div class="front">
                     <img src="assets/Argha_style.jpg" alt="Arghadip Biswas" class="img-fluid rounded-circle">
+                  </div>
+                  <!-- Back Side -->
+                  <div class="back">
+                    <img src="assets/Argha_fun.jpg" alt="Arghadip Biswas Fun" class="img-fluid rounded-circle">
+                  </div>
                 </div>
-                <div class="col-md-6 animate__animated animate__fadeInRight">
-                    <h2><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-                    <p>👋 Hello Connections! I'm Arghadip Biswas, a dynamic problem-solver with a track record of
-                        innovation and excellence in software development. Recognized as the champion at the prestigious
-                        Smart India Hackathon (SIH) 2022 Software Edition, I bring a blend of creativity, technical
-                        prowess, and a relentless drive to deliver impactful solutions.</p>
-                    <p>💼 Completed an internship at CodSoft, where I honed my skills and contributed to cutting-edge
-                        projects that push the boundaries of technology.</p>
-                    <p>🌟 My proficiency in coding has been validated by my achievements on platforms like HackerRank and
-                        CodeChef, where I've earned ⭐️⭐️⭐️⭐️ and ⭐️⭐️ ratings respectively, showcasing my ability to
-                        tackle complex algorithms and optimize solutions.</p>
-                    <p>🌱 As an avid advocate for collaboration and knowledge sharing, I actively contribute to the
-                        open-source community, leveraging my expertise to foster innovation and empower fellow
-                        developers.</p>
-                    <p>🚀 Whether it's building robust applications in C++, or architecting scalable systems in Java, I
-                        thrive on challenges and am committed to driving positive change through technology.</p>
-                    <p>🔍 Currently, I'm delving into the fascinating world of machine learning projects with Python,
-                        specializing in Convolutional Neural Network (CNN) algorithms.</p>
-
-                        <!-- here download attribute is used for adding download functionality to button  -->
-<!--                         <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="background-color: rgb(245, 168, 24);">
-                            <a href="assets/Resume_Arghadip.pdf" download="ArghadipBiswasCV"
-                              style="text-decoration: none;color: #9900ff;"><b>Download CV</b></a>
-                        </button> -->
-                </div>
+              </div>
             </div>
+      
+            <!-- About Me Content -->
+            <div class="col-lg-7 col-md-12 text-left animate__animated animate__fadeInRight">
+              <h2><i class="fas fa-user-alt"></i> About <span>Me</span></h2> <br>
+              <p>👋 Hello Connections! I'm Arghadip Biswas, a dynamic problem-solver with a track record of innovation and excellence in software development...</p>
+              <p>💼 Completed an internship at CodSoft, where I honed my skills and contributed to cutting-edge projects that push the boundaries of technology.</p>
+              <p>🌟 My proficiency in coding has been validated by my achievements on platforms like HackerRank and CodeChef, where I've earned ⭐️⭐️⭐️⭐️ and ⭐️⭐️ ratings, showcasing my ability to tackle complex algorithms and optimize solutions.</p>
+              <p>🌱 As an avid advocate for collaboration and knowledge sharing, I actively contribute to the open-source community, leveraging my expertise to foster innovation and empower fellow developers.</p>
+              <p>🚀 Whether it's building robust applications in C++ or architecting scalable systems in Java, I thrive on challenges and am committed to driving positive change through technology.</p>
+              <p>🔍 Currently, I'm delving into the fascinating world of machine learning projects with Python, specializing in Convolutional Neural Network (CNN) algorithms.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <!-- Education Section Starts -->
 <section class="education py-5" id="education">
@@ -213,58 +212,138 @@
     <!-- Projects Section -->
     <section class="projects-section pt-5" id="projects">
         <div class="container text-center pt-5">
-            <h2 class="animate__animated animate__fadeInUp"><i class="fas fa-laptop-code"></i> My <span>Projects</span></h2>
-            <div class="row animate__animated animate__fadeInUp">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/Teacher_teaches_student.jpg" class="card-img-top" alt="Project 1"  width="235" height="235">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">TeachAsure</h5>
-                            <p class="card-text" style="color: rgb(122, 14, 222);">Automatic Assesment Of Teacher's Confidence Level In Classroom. 
-                                Developed a deep learning model to evaluate the teacher's confidence level.</p>
-                            <a href="Project/Teacher/Index21.html" class="btn btn-primary">Learn More</a>
-                            <a href="https://github.com/TeachAsure/TeachAsure" class="btn btn-primary">View</a>
-                        </div>
+          <h2 class="animate__animated animate__fadeInUp">
+            <i class="fas fa-laptop-code"></i> My <span>Projects</span>
+          </h2>
+          <div class="position-relative">
+            <!-- Scrollable Container -->
+            <div class="project-container animate__animated animate__fadeInUp" id="project-container">     
+              <!-- Page 1 -->
+              <div class="project-grid">
+                <div class="project-card">
+                  <img src="assets/Teacher_teaches_student.jpg" alt="TeachAsure"> <br>
+                  <h5 style="color: green;">TeachAsure</h5>
+                  <p style="color: rgb(122, 14, 222);">Teacher's Confidence Level In Classroom. 
+                    Developed a deep learning model to evaluate the teacher's confidence level.</p>
+                    <div class="button-container">
+                        <a href="Project/Teacher/Index21.html" class="btn btn-primary">Learn More</a>
+                        <a href="https://github.com/TeachAsure/TeachAsure" class="btn btn-primary">View</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/Digital_Finance_Management.png" class="card-img-top" alt="Project 2"  width="300" height="300">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Digital Finance Management App</h5>
-                            <p class="card-text" style="color: rgb(122, 14, 222);">It can control our mind from random Expenditure.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                            <a href="https://drive.google.com/file/d/17mcsBKUAC8J_m70p-t6tixdkqvQYHjRS/view" class="btn btn-primary">View</a>
-                        </div>
-                    </div>
+      
+                <div class="project-card">
+                  <img src="assets/Digital_Finance_Management.png" alt="Finance App"> <br>
+                  <h5 style="color: green;">Digital Finance App</h5>
+                  <p style="color: rgb(122, 14, 222);">Controls mind from random expenditures.</p>
+                  <div class="button-container">
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <a href="https://drive.google.com/file/d/17mcsBKUAC8J_m70p-t6tixdkqvQYHjRS/view" class="btn btn-primary">View</a>
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/chatapp.png" class="card-img-top" alt="Project 3" width="245" height="245">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Gropie App</h5>
-                            <p class="card-text" style="color: rgb(122, 14, 222);">Enables all users of this messaging software to speak with one another and members of their groups.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                            <a href="https://drive.google.com/file/d/17O1LnFKmRtETHcgSFpAs1DCMc0hCU7m6/view" class="btn btn-primary">View</a>
-                        </div>
+                
+                <div class="project-card">
+                    <img src="assets/bank-line.png" alt="Bank Line"> <br> 
+                    <h5 style="color: green;">Bank Line</h5>
+                    <p style="color: rgb(122, 14, 222);">Connect all banks through a third party website & provide multiple benifits.</p>
+                    <div class="button-container">
+                      <a href="https://github.com/arghadipbiswas/Banking_Website/tree/master" class="btn btn-primary">Learn More</a>
+                      <a href="https://arghadipbiswas.github.io/Banking_Website/" class="btn btn-primary">View</a>
+                      <!-- <span class="in-progress-sign">In Progress</span> -->
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/bank-line.png" class="card-img-top" alt="Project 3" width="245" height="245">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Bank Line</h5>
-                            <p class="card-text" style="color: rgb(122, 14, 222);">Connect all banks through a third party website & provide multiple benifits.</p>
-                            <a href="https://github.com/arghadipbiswas/Banking_Website/tree/master" class="btn btn-primary">Learn More</a>
-                            <a href="https://arghadipbiswas.github.io/Banking_Website/" class="btn btn-primary">View</a>
-                        </div>
-                        <span class="in-progress-sign">In Progress</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                  </div> 
 
+                <div class="project-card">
+                  <img src="assets/chatapp.png" alt="Gropie App"> <br>
+                  <h5 style="color: green;">Gropie App</h5>
+                  <p style="color: rgb(122, 14, 222);">Enables all users of this messaging software to speak with one another and members of their groups.</p>
+                  <div class="button-container">
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <a href="https://drive.google.com/file/d/17O1LnFKmRtETHcgSFpAs1DCMc0hCU7m6/view" class="btn btn-primary">View</a>
+                  </div>
+                </div>
+            
+                <!-- <div class="project-card">
+                  <img src="assets/Teacher_teaches_student.jpg" alt="Another Project"> <br>
+                  <h5 style="color: green;">Another Project</h5>
+                  <p style="color: rgb(122, 14, 222);">A different project description here.</p>
+                  <div class="button-container">
+
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/Digital_Finance_Management.png" alt="Yet Another App"> <br>
+                  <h5 style="color: green;">Yet Another App</h5>
+                  <p style="color: rgb(122, 14, 222);">Another project description.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+              </div> -->
+      
+        <!-- Page 2 - Now the same size as Page 1 -->
+              <!-- <div class="project-grid">
+                <div class="project-card">
+                  <img src="assets/bank-line.png" alt="Bank Line"> <br>
+                  <h5 style="color: green;">Bank Line</h5>
+                  <p style="color: rgb(122, 14, 222);">Connects all banks via a third-party platform.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/Teacher_teaches_student.jpg" alt="Another Project"> <br>
+                  <h5 style="color: green;">Another Project</h5>
+                  <p style="color: rgb(122, 14, 222);">A different project description here.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/Teacher_teaches_student.jpg" alt="Another Project"> <br>
+                  <h5 style="color: green;">Another Project</h5>
+                  <p style="color: rgb(122, 14, 222);">A different project description here.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/Digital_Finance_Management.png" alt="Yet Another App"> <br>
+                  <h5 style="color: green;">Yet Another App</h5>
+                  <p style="color: rgb(122, 14, 222);">Another project description.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/chatapp.png" alt="Gropie App"> <br>
+                  <h5 style="color: green;">Gropie App</h5>
+                  <p style="color: rgb(122, 14, 222);">Messaging app for group chats.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div>
+      
+                <div class="project-card">
+                  <img src="assets/Teacher_teaches_student.jpg" alt="Another Project"> <br>
+                  <h5 style="color: green;">Another Project</h5>
+                  <p style="color: rgb(122, 14, 222);">Another project description here.</p>
+                  <div class="button-container">
+                    
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
     <!-- Experience Section -->
     <!-- experience section starts -->
 <section class="experience" id="experience">
@@ -343,42 +422,47 @@
     <!-- Certificates Section -->
     <section class="certificates-section pt-5 text-center" id="certificates">
         <div class="container text-center pt-5">
-            <h2><i class="fas fa-certificate"></i> Certificates</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/Coursera.png" class="card-img-top" alt="Certificate 1" width="235" height="235"> 
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Machine Learning with Python</h5>
-                            <p class="card-text">Issued by <b style="color: rgb(122, 14, 222);">IBM</b>, <i style="color: rgb(222, 14, 14);">Apr 2023</i></p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/7ZZ53ZLMJ6E5" class="btn btn-primary">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/Coursera.png" class="card-img-top" alt="Certificate 3" width="235" height="235">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Android Development</h5>
-                            <p class="card-text">Issued by <b style="color: rgb(122, 14, 222);">CentraleSupelee</b>, <i style="color: rgb(222, 14, 14);">Sep 2022</i></p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/XVM49EH3AZU8" class="btn btn-primary">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/Coursera.png" class="card-img-top" alt="Certificate 2" width="235" height="235">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: green;">Web Development</h5>
-                            <p class="card-text">Issued by <b style="color: rgb(122, 14, 222);">UCDAVIS</b>, <i style="color: rgb(222, 14, 14);">Apr 2021</i></p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/QA52AP2K6QMY" class="btn btn-primary">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-                
+          <h2 class="animate__animated animate__fadeInUp">
+            <i class="fas fa-certificate"></i> Certificates
+          </h2>
+          <div class="position-relative">
+            <!-- Scrollable Container -->
+            <div class="certificates-container animate__animated animate__fadeInUp" id="certificates-container">
+              <!-- Certificate Cards -->
+              <div class="certificate-card">
+                <img src="assets/Coursera.png" alt="Machine Learning with Python"> <br> <br>
+                <h5 style="color: green;">Machine Learning with Python</h5>
+                <p>
+                  Issued by <b style="color: rgb(122, 14, 222);">IBM</b>, 
+                  <i style="color: rgb(222, 14, 14);">Apr 2023</i>
+                </p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/7ZZ53ZLMJ6E5" class="btn btn-primary">View Certificate</a>
+              </div>
+      
+              <div class="certificate-card">
+                <img src="assets/Coursera.png" alt="Android Development"> <br> <br>
+                <h5 style="color: green;">Android Development</h5>
+                <p>
+                  Issued by <b style="color: rgb(122, 14, 222);">CentraleSupelee</b>, 
+                  <i style="color: rgb(222, 14, 14);">Sep 2022</i>
+                </p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/XVM49EH3AZU8" class="btn btn-primary">View Certificate</a>
+              </div>
+      
+              <div class="certificate-card">
+                <img src="assets/Coursera.png" alt="Web Development"> <br> <br>
+                <h5 style="color: green;">Web Development</h5>
+                <p>
+                  Issued by <b style="color: rgb(122, 14, 222);">UCDAVIS</b>, 
+                  <i style="color: rgb(222, 14, 14);">Apr 2021</i>
+                </p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/QA52AP2K6QMY" class="btn btn-primary">View Certificate</a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+  
 
     <!-- Publications Section -->
     <section class="publications-section pt-5" id="publications">
@@ -394,88 +478,81 @@
     </section>
 
     <!-- Blogs Section -->
-    <section class="blogs-section pt-5" id="blogs">
-        <div class="container text-center pt-5">
-            <h2 class="animate__animated animate__fadeInUp"><i class="fas fa-blog"></i> My <span>Blogs</span></h2>
-            <div class="position-relative">
-                <div class="blog-container animate__animated animate__fadeInUp" id="blog-container">
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/SIH/index11.html"><img src="assets/SIH.jpg" class="card-img-top" alt="Blog 1" width="250" height="250"></a>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">Winner Of Smart India Hackathon 2022</h5>
-                                <p class="card-text" style="color: rgb(255, 5, 5);"> SIH is a team recognized for their 
-                                    exceptional innovative solution to a challenging problem presented.</p>
-                                <a href="Blogs/SIH/index11.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/Kriti_Award/index12.html"><img src="assets/Kriti Award.jpg" class="card-img-top" alt="Blog 2" width="250" height="250"></a>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">Kriti Award</h5>
-                                <p class="card-text" style="color: rgb(72, 16, 125);">The Kriti Award 2022 is a prestigious accolade 
-                                    recognizing outstanding achievement and excellence in a specific field.</p>
-                                <a href="Blogs/Kriti_Award/index12.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/Google_Cloud/index16.html"><img src="assets/Google_Cloud.png" class="card-img-top" alt="Blog 2" width="250" height="250"></a> 
-                            <span class="in-progress-sign">In Progress</span>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">Google Cloud Arcade Facilator Program 2024</h5>
-                                <p class="card-text" style="color: rgb(202, 31, 188);"> Itis a comprehensive initiative designed to train and 
-                                    empower individuals to lead.</p>
-                                <a href="Blogs/Google_Cloud/index16.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/Hacktoberfest/index13.html"><img src="assets/hacktoberfest-banner.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">Hacktoberfest 2022</h5>
-                                <p class="card-text" style="color: #790303;">Hacktoberfest is an annual event encouraging open-source 
-                                    contributions by developers worldwide.</p>
-                                <a href="Blogs/Hacktoberfest/index13.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/Flutter/index14.html"><img src="assets/Flutter-event.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">Flutter Event</h5>
-                                <p class="card-text" style="color: rgb(122, 14, 222);">It is a gathering focused on the Flutter 
-                                    framework . Explore new advancements in mobile app development 
-                                </p>
-                                <a href="Blogs/Flutter/index14.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="card">
-                            <a href="Blogs/JIS_SANMAN/index15.html"><img src="assets/JIS_SANMAN4.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: rgb(16, 214, 39);">JIS Sanman Award</h5>
-                                <p class="card-text" style="color: rgb(156, 61, 61);">The JIS Sanman Award honors exceptional achievements in 
-                                    extracurricular activities, and innovative projects.
-                                </p>
-                                <a href="Blogs/JIS_SANMAN/index15.html" class="btn btn-primary">Read More</a>
-                            </div>
+<section class="blogs-section pt-5" id="blogs">
+    <div class="container text-center pt-5">
+        <h2 class="animate__animated animate__fadeInUp"><i class="fas fa-blog"></i> My <span>Blogs</span></h2>
+        <div class="position-relative">
+            <div class="blog-container animate__animated animate__fadeInUp" id="blog-container" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;">
+                <style>
+                    #blog-container::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/SIH/index11.html"><img src="assets/SIH.jpg" class="card-img-top" alt="Blog 1" width="250" height="250"></a>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">Winner Of Smart India Hackathon 2022</h5>
+                            <p class="card-text" style="color: rgb(255, 5, 5);"> SIH is a team recognized for their exceptional innovative solution to a challenging problem presented.</p>
+                            <a href="Blogs/SIH/index11.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
-                <!-- Scroll buttons -->
-                <button id="scroll-left" class="scroll-button left-btn">&lt;</button>
-                <button id="scroll-right" class="scroll-button right-btn">&gt;</button>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/Kriti_Award/index12.html"><img src="assets/Kriti Award.jpg" class="card-img-top" alt="Blog 2" width="250" height="250"></a>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">Kriti Award</h5>
+                            <p class="card-text" style="color: rgb(72, 16, 125);">The Kriti Award 2022 is a prestigious accolade recognizing outstanding achievement and excellence in a specific field.</p>
+                            <a href="Blogs/Kriti_Award/index12.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/Google_Cloud/index16.html"><img src="assets/Google_Cloud.png" class="card-img-top" alt="Blog 2" width="250" height="250"></a> 
+                        <span class="in-progress-sign">In Progress</span>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">Google Cloud Arcade Facilator Program 2024</h5>
+                            <p class="card-text" style="color: rgb(202, 31, 188);"> It is a comprehensive initiative designed to train and empower individuals to lead.</p>
+                            <a href="Blogs/Google_Cloud/index16.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/Hacktoberfest/index13.html"><img src="assets/hacktoberfest-banner.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">Hacktoberfest 2022</h5>
+                            <p class="card-text" style="color: #790303;">Hacktoberfest is an annual event encouraging open-source contributions by developers worldwide.</p>
+                            <a href="Blogs/Hacktoberfest/index13.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/Flutter/index14.html"><img src="assets/Flutter-event.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">Flutter Event</h5>
+                            <p class="card-text" style="color: rgb(122, 14, 222);">It is a gathering focused on the Flutter framework. Explore new advancements in mobile app development.</p>
+                            <a href="Blogs/Flutter/index14.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 0 0 auto; scroll-snap-align: start;">
+                    <div class="card">
+                        <a href="Blogs/JIS_SANMAN/index15.html"><img src="assets/JIS_SANMAN4.jpg" class="card-img-top" alt="Blog 3" width="250" height="250"></a>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(16, 214, 39);">JIS Sanman Award</h5>
+                            <p class="card-text" style="color: rgb(156, 61, 61);">The JIS Sanman Award honors exceptional achievements in extracurricular activities, and innovative projects.</p>
+                            <a href="Blogs/JIS_SANMAN/index15.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
