@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  scrollLeftBtn.addEventListener('click', function() {
-    scrollContainer(-300); // Scrolls left by 300px
-  });
+  // scrollLeftBtn.addEventListener('click', function() {
+  //   scrollContainer(-300); // Scrolls left by 300px
+  // });
 
-  scrollRightBtn.addEventListener('click', function() {
-    scrollContainer(300); // Scrolls right by 300px
-  });
+  // scrollRightBtn.addEventListener('click', function() {
+  //   scrollContainer(300); // Scrolls right by 300px
+  // });
 });
 
 // Preloader
@@ -82,3 +82,34 @@ document.addEventListener('scroll', function() {
     navbar.classList.remove('scrolled');
   }
 });
+
+
+//Scrolling full page down to upward
+AOS.init();
+    // Scroll to Top Button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    scrollToTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable Copy and Paste
+  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('copy', (e) => e.preventDefault());
+  document.addEventListener('paste', (e) => e.preventDefault());
+});
+
