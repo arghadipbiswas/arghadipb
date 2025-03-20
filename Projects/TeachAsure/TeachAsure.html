@@ -175,10 +175,11 @@
         e.preventDefault();
     });
 
-    // Disable Copy and Paste
+    // Disable Copy and Paste,cut
   document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('copy', (e) => e.preventDefault());
   document.addEventListener('paste', (e) => e.preventDefault());
+  document.addEventListener('cut', (e) => e.preventDefault());
 });
 </script>
 

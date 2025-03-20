@@ -625,23 +625,76 @@
     </footer>
 
   
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" class="btn btn-primary"><i class="fas fa-arrow-up"></i></button>
-
+    
     <!-- AOS Animation Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!-- AOS and Scroll JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
+    
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="scripts.js"></script>
-
-   <!-- Preloader -->
+    
+    <!-- Preloader -->
     <div id="preloader"></div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="btn btn-primary"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+    // ============================
+    // Initialize AOS (Animate on Scroll)
+    // ============================
+    AOS.init();
+
+      // Preloader
+    document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+    const homeSection = document.getElementById('home');
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 0.5s ease-in-out';
+        setTimeout(() => {
+            preloader.remove();
+            content.style.display = 'block';
+            homeSection.classList.add('animate'); // Add the animation class after preloader is done
+        }, 500); // Wait for the fade-out transition
+        }, 1000); // Keep the preloader for at least 1 second
+    });
+    });
+
+    // <!-- Scroll to Top Script -->
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    scrollToTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable Copy and Paste,cut
+  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('copy', (e) => e.preventDefault());
+  document.addEventListener('paste', (e) => e.preventDefault());
+  document.addEventListener('cut', (e) => e.preventDefault());
+});
+    </script>
 
 </body>
 
