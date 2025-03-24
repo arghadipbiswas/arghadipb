@@ -588,12 +588,14 @@
                     <img src="assets/contact_form.png" alt="Contact Image" class="img-fluid rounded">
                 </div>
                 <!-- Right Side: Contact Form -->
-                <div class="col-md-6">
-                  <form id="contactForm">
+                <div class="col-md-4">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvEQSN2z3pk7tz4sNW4U6oKm-1vNGCxtIyGt3Q_rJ1UvjWuQ/viewform?embedded=true" 
+                  width="360" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  <!-- <form id="contactForm">
                     <div class="form-group">
                       <label for="name"><i class='fas fa-user'></i> Name <span class="text-danger">*</span></label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
+                    </div>
                         <div class="form-group">
                             <label for="email"><i class='fas fa-envelope'></i> Email <span class="text-danger">*</span></label>
                             <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
@@ -609,9 +611,10 @@
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary" style="margin-right: 15px;"><i class="fa fa-paper-plane"></i> Send</button>
                             <button type="reset" class="btn btn-primary">reset</button>
-                          </div>
-                        <div id="successMessage" style="display: none; color: green;text-align: center; margin-top: 10px;"></div>
-                        </form>
+                        </div>
+                        <div id="successMessage" style="display: none; color: green;text-align: center; margin-top: 10px;">
+                        </div>
+                  </form> -->
                 </div>
             </div>
         </div>
@@ -690,9 +693,9 @@
     };
 
     // Disable right-click context menu
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
+    // document.addEventListener('contextmenu', function(e) {
+    //     e.preventDefault();
+    // });
 
     // Disable Copy and Paste,cut
   document.addEventListener('DOMContentLoaded', () => {
