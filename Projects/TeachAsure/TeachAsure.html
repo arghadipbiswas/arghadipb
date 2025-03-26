@@ -175,6 +175,25 @@
         e.preventDefault();
     });
 
+    // Disable all inspect shortcuts
+    document.addEventListener('keydown', function (e) {
+      // List of blocked key combinations
+      if (
+        e.key === 'F12' ||  // F12
+        (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl + Shift + I (Inspect)
+        (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl + Shift + J (Console)
+        (e.ctrlKey && e.key === 'u') || // Ctrl + U (View Source)
+        (e.ctrlKey && e.shiftKey && e.key === 'C') || // Ctrl + Shift + C (Element Picker)
+        (e.ctrlKey && e.key === 's') || // Ctrl + S (Save Page)
+        (e.metaKey && e.shiftKey && e.key === 'I') || // Cmd + Shift + I (Mac)
+        (e.metaKey && e.key === 'U') || (e.metaKey && e.key === 'u') || // Cmd + U (Mac)
+        (e.metaKey && e.key === 'S') || (e.metaKey && e.key === 's') // Cmd + S (Mac)
+      ) {
+        e.preventDefault();
+        alert('Inspecting is disabled!');
+      }
+    });
+
     // Disable Copy and Paste,cut
   document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('copy', (e) => e.preventDefault());
